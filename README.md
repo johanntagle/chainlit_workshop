@@ -28,7 +28,7 @@ A complete customer support agent for "Bella's Italian Restaurant" featuring:
 1.5 hours of progressive learning
 
 ### Prerequisites
-- Python 3.9+ installed
+- Python 3.10+ installed
 - Basic Python knowledge (functions, dictionaries, async/await)
 - OpenAI API key ([get one here](https://platform.openai.com/api-keys))
 - Code editor (VS Code recommended)
