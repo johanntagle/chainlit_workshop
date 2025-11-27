@@ -10,7 +10,7 @@ New Features:
 - Conversation memory (message history)
 - Streaming responses for better UX
 
-To run: chainlit run scripts/02_with_system_prompt.py
+To run: uv run chainlit run scripts/02_with_system_prompt.py
 """
 
 import os
@@ -18,6 +18,7 @@ from openai import OpenAI
 import chainlit as cl
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
 # System prompt defines the bot's personality and knowledge
 SYSTEM_PROMPT = """You are the AI assistant for Bella's Italian Restaurant, a family-owned Italian restaurant.
@@ -66,7 +67,7 @@ async def main(message: cl.Message):
 
     # Create streaming response
     stream = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=MODEL,
         messages=messages,
         stream=True
     )

@@ -6,7 +6,7 @@ Shows how easy it is to get started - under 20 lines!
 
 Key Learning: "This is how easy it is to get started"
 
-To run: chainlit run scripts/01_bare_minimum_chatbot.py
+To run: uv run chainlit run scripts/01_bare_minimum_chatbot.py
 """
 
 import os
@@ -14,11 +14,12 @@ from openai import OpenAI
 import chainlit as cl
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
 @cl.on_message
 async def main(message: cl.Message):
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=MODEL,
         messages=[{"role": "user", "content": message.content}]
     )
 

@@ -13,7 +13,7 @@ New Features:
 Prerequisites:
 - Run: python scripts/utils/setup_vectordb.py first to create the vector database
 
-To run: chainlit run scripts/05_rag_basic.py
+To run: uv run chainlit run scripts/05_rag_basic.py
 """
 
 import os
@@ -37,6 +37,7 @@ except ImportError:
     print("[WARNING] ChromaDB or sentence-transformers not installed. RAG features will be limited.")
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
 # Paths
 BASE_DIR = Path(__file__).parent.parent
@@ -339,7 +340,7 @@ async def main(message: cl.Message):
 
     # Step 4: Call OpenAI with tools
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=MODEL,
         messages=messages,
         tools=TOOLS,
         tool_choice="auto"
@@ -382,7 +383,7 @@ async def main(message: cl.Message):
 
         # Get final response
         final_response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model=MODEL,
             messages=[{"role": "system", "content": system_prompt}] + message_history
         )
 

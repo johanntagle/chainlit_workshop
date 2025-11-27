@@ -11,7 +11,7 @@ New Features:
 - Multi-turn conversation to collect missing parameters
 - Mock availability logic based on party size and time
 
-To run: chainlit run scripts/04a_tools_availability.py
+To run: uv run chainlit run scripts/04a_tools_availability.py
 """
 
 import os
@@ -23,6 +23,7 @@ from typing import Tuple
 import random
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
 SYSTEM_PROMPT = """You are the AI assistant for Bella's Italian Restaurant, a family-owned Italian restaurant.
 
@@ -240,7 +241,7 @@ async def main(message: cl.Message):
 
     # Call OpenAI with tools
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=MODEL,
         messages=messages,
         tools=TOOLS,
         tool_choice="auto"
@@ -288,7 +289,7 @@ async def main(message: cl.Message):
 
         # Get final response from OpenAI with tool results
         final_response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model=MODEL,
             messages=[{"role": "system", "content": SYSTEM_PROMPT}] + message_history
         )
 

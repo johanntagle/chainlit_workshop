@@ -11,7 +11,7 @@ New Features:
 - Confirmation number generation
 - Complete reservation summary
 
-To run: chainlit run scripts/04b_tools_reservation.py
+To run: uv run chainlit run scripts/04b_tools_reservation.py
 """
 
 import os
@@ -24,6 +24,7 @@ import chainlit as cl
 from typing import Tuple
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
 SYSTEM_PROMPT = """You are the AI assistant for Bella's Italian Restaurant, a family-owned Italian restaurant.
 
@@ -226,7 +227,7 @@ async def main(message: cl.Message):
 
     # Call OpenAI with tools
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=MODEL,
         messages=messages,
         tools=TOOLS,
         tool_choice="auto"
@@ -284,7 +285,7 @@ async def main(message: cl.Message):
 
         # Get final response with tool results
         final_response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model=MODEL,
             messages=[{"role": "system", "content": SYSTEM_PROMPT}] + message_history
         )
 

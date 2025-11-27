@@ -10,7 +10,7 @@ New Features:
 - Load JSON data at startup
 - Filter and search capabilities
 
-To run: chainlit run scripts/04c_tools_menu_business.py
+To run: uv run chainlit run scripts/04c_tools_menu_business.py
 """
 
 import os
@@ -24,6 +24,7 @@ import chainlit as cl
 from typing import Tuple, Optional
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
 # Load business data at startup
 BASE_DIR = Path(__file__).parent.parent
@@ -319,7 +320,7 @@ async def main(message: cl.Message):
     messages = [{"role": "system", "content": SYSTEM_PROMPT}] + message_history
 
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=MODEL,
         messages=messages,
         tools=TOOLS,
         tool_choice="auto"
@@ -360,7 +361,7 @@ async def main(message: cl.Message):
             })
 
         final_response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model=MODEL,
             messages=[{"role": "system", "content": SYSTEM_PROMPT}] + message_history
         )
 

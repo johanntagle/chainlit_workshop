@@ -75,13 +75,13 @@ cp .env.example .env
 ### 3. Initialize Vector Database (for RAG features)
 
 ```bash
-python scripts/utils/setup_vectordb.py
+uv run scripts/utils/setup_vectordb.py
 ```
 
 ### 4. Validate Setup
 
 ```bash
-python scripts/utils/validate_setup.py
+uv run scripts/utils/validate_setup.py
 ```
 
 You should see all green checkmarks! ✅
@@ -154,7 +154,7 @@ Each script builds on the previous one. Follow them in order!
 - Auto-generated Chainlit UI
 
 ```bash
-chainlit run scripts/01_bare_minimum_chatbot.py
+uv run chainlit run scripts/01_bare_minimum_chatbot.py
 ```
 
 **Try:**
@@ -170,7 +170,7 @@ chainlit run scripts/01_bare_minimum_chatbot.py
 - Streaming responses
 
 ```bash
-chainlit run scripts/02_with_system_prompt.py
+uv run chainlit run scripts/02_with_system_prompt.py
 ```
 
 **Try:**
@@ -187,7 +187,7 @@ chainlit run scripts/02_with_system_prompt.py
 - Spam protection
 
 ```bash
-chainlit run scripts/03a_input_guardrails.py
+uv run chainlit run scripts/03a_input_guardrails.py
 ```
 
 **Try:**
@@ -204,7 +204,7 @@ chainlit run scripts/03a_input_guardrails.py
 - Escalate to humans appropriately
 
 ```bash
-chainlit run scripts/03b_output_guardrails.py
+uv run chainlit run scripts/03b_output_guardrails.py
 ```
 
 **Try:**
@@ -221,7 +221,7 @@ chainlit run scripts/03b_output_guardrails.py
 - Conversational parameter collection
 
 ```bash
-chainlit run scripts/04a_tools_availability.py
+uv run chainlit run scripts/04a_tools_availability.py
 ```
 
 **Try:**
@@ -237,7 +237,7 @@ chainlit run scripts/04a_tools_availability.py
 - Generate confirmation numbers
 
 ```bash
-chainlit run scripts/04b_tools_reservation.py
+uv run chainlit run scripts/04b_tools_reservation.py
 ```
 
 **Try:**
@@ -253,7 +253,7 @@ chainlit run scripts/04b_tools_reservation.py
 - Provide business information
 
 ```bash
-chainlit run scripts/04c_tools_menu_business.py
+uv run chainlit run scripts/04c_tools_menu_business.py
 ```
 
 **Try:**
@@ -271,10 +271,10 @@ chainlit run scripts/04c_tools_menu_business.py
 
 ```bash
 # First, set up the vector database
-python scripts/utils/setup_vectordb.py
+uv run scripts/utils/setup_vectordb.py
 
 # Then run the script
-chainlit run scripts/05_rag_basic.py
+uv run chainlit run scripts/05_rag_basic.py
 ```
 
 **Try:**
@@ -293,7 +293,7 @@ chainlit run scripts/05_rag_basic.py
 - Professional UX
 
 ```bash
-chainlit run scripts/06_final_polished.py
+uv run chainlit run scripts/06_final_polished.py
 ```
 
 **Try:**

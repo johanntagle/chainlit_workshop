@@ -11,7 +11,7 @@ New Features:
 - Escalation detection for complaints/serious issues
 - Human handoff protocol
 
-To run: chainlit run scripts/03b_output_guardrails.py
+To run: uv run chainlit run scripts/03b_output_guardrails.py
 """
 
 import os
@@ -20,6 +20,7 @@ import chainlit as cl
 from typing import Tuple
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
 # Enhanced system prompt with strict output rules
 SYSTEM_PROMPT = """You are the AI assistant for Bella's Italian Restaurant, a family-owned Italian restaurant.
@@ -210,7 +211,7 @@ async def main(message: cl.Message):
     messages = [{"role": "system", "content": SYSTEM_PROMPT}] + message_history
 
     stream = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=MODEL,
         messages=messages,
         stream=True
     )

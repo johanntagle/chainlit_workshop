@@ -14,7 +14,7 @@ Features:
 - Easy configuration for different businesses
 - All previous features (guardrails, tools, RAG)
 
-To run: chainlit run scripts/06_final_polished.py
+To run: uv run chainlit run scripts/06_final_polished.py
 """
 
 import os
@@ -36,6 +36,7 @@ except:
     CHROMA_AVAILABLE = False
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
 # =============================================================================
 # CONFIGURATION - Easy to customize for different businesses
@@ -484,7 +485,7 @@ async def main(message: cl.Message):
 
     # Call OpenAI
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=MODEL,
         messages=messages,
         tools=TOOLS,
         tool_choice="auto"
@@ -523,7 +524,7 @@ async def main(message: cl.Message):
             message_history.append({"role": "tool", "tool_call_id": tool_call.id, "content": json.dumps(result)})
 
         final_response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model=MODEL,
             messages=[{"role": "system", "content": system_prompt}] + message_history
         )
         final_message = final_response.choices[0].message.content
