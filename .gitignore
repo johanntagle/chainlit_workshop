@@ -41,7 +41,7 @@ wheels/
 data/embeddings/*.db
 data/embeddings/*.sqlite3
 data/embeddings/chroma/
-
+data/embeddings/*
 # Generated files
 data/leads.json
 
