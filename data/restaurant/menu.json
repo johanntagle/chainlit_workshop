@@ -1,0 +1,628 @@
+{
+  "appetizers": [
+    {
+      "id": "app001",
+      "name": "Bruschetta Classica",
+      "description": "Toasted bread with tomatoes, garlic, basil, and extra virgin olive oil",
+      "price": 12,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten"],
+      "popular": true
+    },
+    {
+      "id": "app002",
+      "name": "Calamari Fritti",
+      "description": "Lightly fried squid served with spicy marinara and lemon",
+      "price": 14,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "seafood"],
+      "popular": true
+    },
+    {
+      "id": "app003",
+      "name": "Caprese Salad",
+      "description": "Fresh mozzarella, vine-ripened tomatoes, and basil with balsamic reduction",
+      "price": 13,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": true,
+      "allergens": ["dairy"],
+      "popular": false
+    },
+    {
+      "id": "app004",
+      "name": "Arancini",
+      "description": "Sicilian rice balls stuffed with mozzarella and peas, served with marinara",
+      "price": 11,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": false
+    },
+    {
+      "id": "app005",
+      "name": "Antipasto Platter",
+      "description": "Assorted cured meats, cheeses, olives, and marinated vegetables",
+      "price": 18,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": true,
+      "allergens": ["dairy"],
+      "popular": true
+    },
+    {
+      "id": "app006",
+      "name": "Stuffed Mushrooms",
+      "description": "Button mushrooms filled with Italian sausage, breadcrumbs, and herbs",
+      "price": 12,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": false
+    }
+  ],
+  "pasta": [
+    {
+      "id": "pasta001",
+      "name": "Spaghetti Carbonara",
+      "description": "House-made pasta with pancetta, eggs, pecorino romano, and black pepper",
+      "price": 18,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "eggs", "dairy"],
+      "popular": true,
+      "recommended_wine": "Pinot Grigio"
+    },
+    {
+      "id": "pasta002",
+      "name": "Linguine alle Vongole",
+      "description": "Fresh clams, white wine, garlic, parsley, and red pepper flakes",
+      "price": 22,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "seafood"],
+      "popular": true,
+      "recommended_wine": "Vermentino"
+    },
+    {
+      "id": "pasta003",
+      "name": "Pappardelle Bolognese",
+      "description": "Wide ribbon pasta with our slow-cooked traditional meat sauce",
+      "price": 20,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": true,
+      "recommended_wine": "Chianti"
+    },
+    {
+      "id": "pasta004",
+      "name": "Fettuccine Alfredo",
+      "description": "Fresh fettuccine in a rich cream and parmesan sauce",
+      "price": 17,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": false,
+      "recommended_wine": "Chardonnay"
+    },
+    {
+      "id": "pasta005",
+      "name": "Penne Arrabbiata",
+      "description": "Penne in a spicy tomato sauce with garlic and red chili peppers",
+      "price": 16,
+      "vegetarian": true,
+      "vegan": true,
+      "gluten_free": false,
+      "allergens": ["gluten"],
+      "popular": false,
+      "recommended_wine": "Montepulciano"
+    },
+    {
+      "id": "pasta006",
+      "name": "Lasagna della Nonna",
+      "description": "Layers of pasta, meat sauce, ricotta, and mozzarella, baked to perfection",
+      "price": 19,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy", "eggs"],
+      "popular": true,
+      "recommended_wine": "Chianti"
+    },
+    {
+      "id": "pasta007",
+      "name": "Ravioli di Ricotta e Spinaci",
+      "description": "House-made ravioli filled with ricotta and spinach in sage butter sauce",
+      "price": 18,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy", "eggs"],
+      "popular": false,
+      "recommended_wine": "Pinot Grigio"
+    },
+    {
+      "id": "pasta008",
+      "name": "Spaghetti con Polpette",
+      "description": "Spaghetti with house-made meatballs in tomato sauce",
+      "price": 17,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy", "eggs"],
+      "popular": true,
+      "recommended_wine": "Barbera"
+    },
+    {
+      "id": "pasta009",
+      "name": "Rigatoni alla Vodka",
+      "description": "Rigatoni in a creamy tomato vodka sauce with pancetta",
+      "price": 18,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": false,
+      "recommended_wine": "Chianti"
+    },
+    {
+      "id": "pasta010",
+      "name": "Orecchiette con Salsiccia",
+      "description": "Ear-shaped pasta with Italian sausage, broccoli rabe, and garlic",
+      "price": 19,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten"],
+      "popular": false,
+      "recommended_wine": "Barbera"
+    }
+  ],
+  "pizza": [
+    {
+      "id": "pizza001",
+      "name": "Margherita",
+      "description": "San Marzano tomatoes, fresh mozzarella, basil, and extra virgin olive oil",
+      "price": 16,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": true
+    },
+    {
+      "id": "pizza002",
+      "name": "Diavola",
+      "description": "Spicy salami, mozzarella, tomato sauce, and chili oil",
+      "price": 18,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": true
+    },
+    {
+      "id": "pizza003",
+      "name": "Quattro Formaggi",
+      "description": "Four cheese blend: mozzarella, gorgonzola, parmesan, and fontina",
+      "price": 17,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": false
+    },
+    {
+      "id": "pizza004",
+      "name": "Prosciutto e Rucola",
+      "description": "Mozzarella, prosciutto di Parma, arugula, and shaved parmesan",
+      "price": 19,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": true
+    },
+    {
+      "id": "pizza005",
+      "name": "Funghi",
+      "description": "Mixed mushrooms, mozzarella, truffle oil, and thyme",
+      "price": 18,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": false
+    },
+    {
+      "id": "pizza006",
+      "name": "Capricciosa",
+      "description": "Ham, artichokes, mushrooms, olives, and mozzarella",
+      "price": 19,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": false
+    },
+    {
+      "id": "pizza007",
+      "name": "Marinara",
+      "description": "Tomato sauce, garlic, oregano, and basil (no cheese)",
+      "price": 14,
+      "vegetarian": true,
+      "vegan": true,
+      "gluten_free": false,
+      "allergens": ["gluten"],
+      "popular": false
+    },
+    {
+      "id": "pizza008",
+      "name": "Salsiccia e Peperoni",
+      "description": "Italian sausage, roasted peppers, mozzarella, and tomato sauce",
+      "price": 18,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": true
+    }
+  ],
+  "entrees": [
+    {
+      "id": "entree001",
+      "name": "Pollo alla Parmigiana",
+      "description": "Breaded chicken breast with marinara, mozzarella, and spaghetti",
+      "price": 24,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy", "eggs"],
+      "popular": true,
+      "recommended_wine": "Chianti"
+    },
+    {
+      "id": "entree002",
+      "name": "Vitello Marsala",
+      "description": "Veal scaloppine in Marsala wine sauce with mushrooms",
+      "price": 28,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": true,
+      "recommended_wine": "Barbera"
+    },
+    {
+      "id": "entree003",
+      "name": "Osso Buco",
+      "description": "Braised veal shank in white wine and vegetables, served with risotto",
+      "price": 32,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": true,
+      "allergens": ["dairy"],
+      "popular": false,
+      "recommended_wine": "Barolo"
+    },
+    {
+      "id": "entree004",
+      "name": "Salmone alla Griglia",
+      "description": "Grilled Atlantic salmon with lemon herb butter and seasonal vegetables",
+      "price": 26,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": true,
+      "allergens": ["seafood", "dairy"],
+      "popular": true,
+      "recommended_wine": "Pinot Grigio"
+    },
+    {
+      "id": "entree005",
+      "name": "Bistecca alla Fiorentina",
+      "description": "24oz T-bone steak grilled with rosemary, served with roasted potatoes",
+      "price": 45,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": true,
+      "allergens": [],
+      "popular": true,
+      "recommended_wine": "Super Tuscan"
+    },
+    {
+      "id": "entree006",
+      "name": "Pollo Piccata",
+      "description": "Chicken breast in lemon caper butter sauce with angel hair pasta",
+      "price": 23,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": false,
+      "recommended_wine": "Chardonnay"
+    },
+    {
+      "id": "entree007",
+      "name": "Branzino al Forno",
+      "description": "Whole Mediterranean sea bass baked with herbs, lemon, and olive oil",
+      "price": 34,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": true,
+      "allergens": ["seafood"],
+      "popular": false,
+      "recommended_wine": "Vermentino"
+    },
+    {
+      "id": "entree008",
+      "name": "Melanzane alla Parmigiana",
+      "description": "Layered eggplant with tomato sauce, mozzarella, and parmesan",
+      "price": 21,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": false,
+      "recommended_wine": "Chianti"
+    },
+    {
+      "id": "entree009",
+      "name": "Saltimbocca alla Romana",
+      "description": "Veal topped with prosciutto and sage in white wine sauce",
+      "price": 29,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": false,
+      "recommended_wine": "Barbera"
+    },
+    {
+      "id": "entree010",
+      "name": "Frutti di Mare",
+      "description": "Mixed seafood (shrimp, mussels, clams, calamari) in white wine tomato sauce over linguine",
+      "price": 30,
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "seafood"],
+      "popular": true,
+      "recommended_wine": "Pinot Grigio"
+    }
+  ],
+  "desserts": [
+    {
+      "id": "dessert001",
+      "name": "Tiramisu",
+      "description": "Classic Italian dessert with espresso-soaked ladyfingers and mascarpone",
+      "price": 9,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy", "eggs"],
+      "popular": true
+    },
+    {
+      "id": "dessert002",
+      "name": "Cannoli Siciliani",
+      "description": "Crispy shells filled with sweet ricotta and chocolate chips",
+      "price": 8,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy"],
+      "popular": true
+    },
+    {
+      "id": "dessert003",
+      "name": "Panna Cotta",
+      "description": "Vanilla cream custard with berry compote",
+      "price": 8,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": true,
+      "allergens": ["dairy"],
+      "popular": false
+    },
+    {
+      "id": "dessert004",
+      "name": "Gelato",
+      "description": "House-made Italian ice cream (ask server for daily flavors)",
+      "price": 7,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": true,
+      "allergens": ["dairy"],
+      "popular": true
+    },
+    {
+      "id": "dessert005",
+      "name": "Torta della Nonna",
+      "description": "Traditional Italian custard tart with pine nuts and lemon zest",
+      "price": 9,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": false,
+      "allergens": ["gluten", "dairy", "eggs", "nuts"],
+      "popular": false
+    },
+    {
+      "id": "dessert006",
+      "name": "Affogato",
+      "description": "Vanilla gelato drowned in espresso",
+      "price": 7,
+      "vegetarian": true,
+      "vegan": false,
+      "gluten_free": true,
+      "allergens": ["dairy"],
+      "popular": false
+    }
+  ],
+  "drinks": {
+    "wine": [
+      {
+        "id": "wine001",
+        "name": "Pinot Grigio",
+        "producer": "Santa Margherita",
+        "region": "Alto Adige",
+        "type": "white",
+        "glass_price": 12,
+        "bottle_price": 42
+      },
+      {
+        "id": "wine002",
+        "name": "Chianti",
+        "producer": "Antinori Pèppoli",
+        "region": "Tuscany",
+        "type": "red",
+        "glass_price": 11,
+        "bottle_price": 38
+      },
+      {
+        "id": "wine003",
+        "name": "Prosecco",
+        "producer": "La Marca",
+        "region": "Veneto",
+        "type": "sparkling",
+        "glass_price": 9,
+        "bottle_price": 32
+      },
+      {
+        "id": "wine004",
+        "name": "Montepulciano d'Abruzzo",
+        "producer": "Masciarelli",
+        "region": "Abruzzo",
+        "type": "red",
+        "glass_price": 9,
+        "bottle_price": 32
+      },
+      {
+        "id": "wine005",
+        "name": "Vermentino",
+        "producer": "Argiolas Costamolino",
+        "region": "Sardinia",
+        "type": "white",
+        "glass_price": 10,
+        "bottle_price": 35
+      }
+    ],
+    "beer": [
+      {
+        "id": "beer001",
+        "name": "Peroni",
+        "type": "Lager",
+        "origin": "Italy",
+        "price": 7
+      },
+      {
+        "id": "beer002",
+        "name": "Moretti",
+        "type": "Lager",
+        "origin": "Italy",
+        "price": 7
+      },
+      {
+        "id": "beer003",
+        "name": "Menabrea",
+        "type": "Amber Lager",
+        "origin": "Italy",
+        "price": 8
+      },
+      {
+        "id": "beer004",
+        "name": "Local IPA",
+        "type": "Craft IPA",
+        "origin": "Local Brewery",
+        "price": 8
+      },
+      {
+        "id": "beer005",
+        "name": "Heineken",
+        "type": "Lager",
+        "origin": "Netherlands",
+        "price": 6
+      }
+    ],
+    "cocktails": [
+      {
+        "id": "cocktail001",
+        "name": "Aperol Spritz",
+        "description": "Aperol, prosecco, and soda water",
+        "price": 12
+      },
+      {
+        "id": "cocktail002",
+        "name": "Negroni",
+        "description": "Gin, Campari, and sweet vermouth",
+        "price": 13
+      },
+      {
+        "id": "cocktail003",
+        "name": "Limoncello Martini",
+        "description": "Vodka, limoncello, and lemon juice",
+        "price": 12
+      },
+      {
+        "id": "cocktail004",
+        "name": "Italian Margarita",
+        "description": "Tequila, amaretto, and lime",
+        "price": 11
+      },
+      {
+        "id": "cocktail005",
+        "name": "Bellini",
+        "description": "Prosecco and white peach puree",
+        "price": 10
+      }
+    ],
+    "non_alcoholic": [
+      {
+        "id": "na001",
+        "name": "San Pellegrino Sparkling Water",
+        "size": "500ml",
+        "price": 5
+      },
+      {
+        "id": "na002",
+        "name": "Soft Drinks",
+        "description": "Coke, Diet Coke, Sprite, Ginger Ale",
+        "price": 3
+      },
+      {
+        "id": "na003",
+        "name": "Italian Sodas",
+        "description": "Blood orange, lemon, or mixed berry",
+        "price": 4
+      },
+      {
+        "id": "na004",
+        "name": "Espresso",
+        "description": "Double shot",
+        "price": 4
+      },
+      {
+        "id": "na005",
+        "name": "Cappuccino",
+        "description": "Espresso with steamed milk and foam",
+        "price": 5
+      },
+      {
+        "id": "na006",
+        "name": "Fresh Juice",
+        "description": "Orange, cranberry, or apple",
+        "price": 4
+      }
+    ]
+  }
+}

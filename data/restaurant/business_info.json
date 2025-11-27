@@ -1,0 +1,77 @@
+{
+  "basic": {
+    "name": "Bella's Italian Restaurant",
+    "tagline": "Authentic Italian Cuisine Since 1985",
+    "phone": "(555) 123-4567",
+    "email": "info@bellasitalian.com",
+    "website": "www.bellasitalian.com",
+    "address": {
+      "street": "123 Main Street",
+      "city": "Downtown",
+      "state": "CA",
+      "zip": "90210"
+    }
+  },
+  "hours": {
+    "monday": "Closed",
+    "tuesday": "11:00 AM - 10:00 PM",
+    "wednesday": "11:00 AM - 10:00 PM",
+    "thursday": "11:00 AM - 10:00 PM",
+    "friday": "11:00 AM - 11:00 PM",
+    "saturday": "10:00 AM - 11:00 PM",
+    "sunday": "10:00 AM - 9:00 PM",
+    "notes": "Saturday and Sunday brunch: 10:00 AM - 2:00 PM"
+  },
+  "parking": {
+    "validation": true,
+    "details": "We validate parking at Main Street Garage (2 hours free). Street parking available. Free lot behind restaurant after 6 PM."
+  },
+  "dress_code": "Casual to business casual. Please avoid beachwear or athletic attire at dinner.",
+  "accessibility": "Fully ADA compliant. Wheelchair accessible entrance, restrooms, and seating available.",
+  "reservations": {
+    "recommended": true,
+    "advance_booking": "Up to 60 days",
+    "large_party_minimum": 8,
+    "large_party_notice": "Please call for parties of 8 or more",
+    "cancellation_policy": "Please cancel at least 2 hours before reservation time. For parties of 8+, 24-hour notice required."
+  },
+  "services": [
+    "Dine-in",
+    "Takeout",
+    "Delivery (via DoorDash)",
+    "Catering",
+    "Private events",
+    "Outdoor seating (seasonal)"
+  ],
+  "payment_methods": [
+    "Cash",
+    "Credit cards (Visa, Mastercard, Amex, Discover)",
+    "Apple Pay",
+    "Google Pay"
+  ],
+  "social_media": {
+    "instagram": "@bellasitalian",
+    "facebook": "/bellasitalian",
+    "yelp": "/biz/bellas-italian-restaurant"
+  },
+  "private_dining": {
+    "available": true,
+    "capacity": 40,
+    "full_buyout_capacity": 120,
+    "contact": "events@bellasitalian.com or (555) 123-4568"
+  },
+  "gift_cards": {
+    "available": true,
+    "purchase_locations": ["In restaurant", "Online"],
+    "expiration": "Never expire"
+  },
+  "special_features": [
+    "House-made pasta daily",
+    "Imported Italian ingredients",
+    "Extensive Italian wine list",
+    "Full bar",
+    "Live music Friday & Saturday nights",
+    "Cooking classes monthly",
+    "Wine tasting events"
+  ]
+}

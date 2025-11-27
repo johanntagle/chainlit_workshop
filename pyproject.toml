@@ -1,0 +1,22 @@
+[project]
+name = "chainlit-workshop"
+version = "0.1.0"
+description = "Workshop materials for building customer support agents with Chainlit"
+requires-python = ">=3.9"
+dependencies = [
+    "chainlit>=1.0.0",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "chromadb>=0.4.0",
+    "langchain>=0.1.0",
+    "langchain-openai>=0.0.5",
+    "sentence-transformers>=2.2.0",
+    "pydantic>=2.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
