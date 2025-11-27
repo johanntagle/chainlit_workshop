@@ -163,6 +163,22 @@ uv run chainlit run scripts/01_bare_minimum_chatbot.py
 
 ---
 
+### UI Configuration Note: Message Scroll Behavior
+
+By default, Chainlit displays new messages at the top of the chat window. To change this to standard chat behavior (newest messages at bottom), edit `.chainlit/config.toml`:
+
+```toml
+[features]
+# Set to false for standard chat behavior (new messages at bottom)
+user_message_autoscroll = false
+```
+
+**Options:**
+- `true` (default): New messages appear at top, older messages scroll down
+- `false` (recommended): New messages appear at bottom, scroll down to see new content (like Slack, Discord, WhatsApp)
+
+---
+
 ### Script 02: System Prompt (10 minutes)
 **Concept:** Add business personality and context
 - System prompt defines bot behavior
