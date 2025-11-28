@@ -410,10 +410,10 @@ What can I do for you today?"""
 
     # Add conversation starter buttons
     actions = [
-        cl.Action(name="reservation", value="reservation", label="Make a Reservation"),
-        cl.Action(name="menu", value="menu", label="View Menu"),
-        cl.Action(name="hours", value="hours", label="Hours & Location"),
-        cl.Action(name="catering", value="catering", label="Catering Info")
+        cl.Action(name="reservation", payload={"action": "reservation"}, label="Make a Reservation"),
+        cl.Action(name="menu", payload={"action": "menu"}, label="View Menu"),
+        cl.Action(name="hours", payload={"action": "hours"}, label="Hours & Location"),
+        cl.Action(name="catering", payload={"action": "catering"}, label="Catering Info")
     ]
 
     await cl.Message(content="Quick actions:", actions=actions).send()
